@@ -1,0 +1,21 @@
+.UserPage {
+  padding: 10px;
+  text-align: left;
+  color: white;
+
+  img {
+    width: 300px;
+  }
+
+  :first-child {
+    text-align: center;
+  }
+
+  p {
+    max-width: 500px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+
+  .App-header {
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+
+    .pages {
+      cursor: pointer;
+      &:active {
+        background-color: rgba(255, 0, 0, 0.5);
+        color: white;
+      }
+
+      .pagesLink {
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .controlButtons {
+      button {
+        cursor: pointer;
+        border: 1px solid #444;
+        border-radius: 4px;
+        padding: 5px 12px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all 1s;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+
+    li {
+      padding: 0 7px;
+    }
+  }
+
+  .active {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+  }
+}
